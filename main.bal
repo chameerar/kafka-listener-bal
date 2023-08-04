@@ -31,6 +31,7 @@ service on new kafka:Listener(kafkaEndpoint, consumerConfigs) {
     private final kafka:Producer orderProducer;
 
     function init() returns error? {
+        io:println("Order consumer service configs: " , consumerConfigs.groupId, kafkaEndpoint);
         self.orderProducer = check new (kafkaEndpoint);
     }
 
