@@ -6,7 +6,7 @@ configurable string orders = "orders";
 configurable string paymentSuccessOrders = "payment-success-orders";
 configurable decimal pollingInterval = 1;
 // configurable string kafkaEndpoint = kafka:DEFAULT_URL;
-configurable string kafkaEndpoint = "0.tcp.in.ngrok.io:15608";
+configurable string kafkaEndpoint = "0.tcp.in.ngrok.io:12545";
 
 
 public type Order readonly & record {|
